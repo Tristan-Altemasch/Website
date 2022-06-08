@@ -2,7 +2,7 @@
     background-color: white;
 }
 
-button{
+.button{
     cursor: pointer;
 }
 
@@ -61,11 +61,8 @@ button{
 }
 
 .button-header:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+    
 }
-
-
 .container{
     width: 100%;
     float: left;
