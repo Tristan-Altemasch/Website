@@ -1,0 +1,109 @@
+.background{
+    background-color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+.font{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.Überschrift{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+
+.img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-left{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-right{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: transform .2s;
+    transform: scale(0.98);
+}
+
+.button-header{
+    font-family: 'Roboto', sans-serif;
+    color: none;
+    background-color: white;
+    font-size: 40px;
+}
+
+.button-header:hover {
+    color: rgb(37, 207, 94);
+}
+
+.button-header:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+.container{
+    width: 100%;
+    float: left;
+    border: none;
+    text-align: center;
+}
+.container button{
+    display: inline-block;
+}
+#btn1{
+    float:left;
+}
+#btn2{
+    float:left;
+}
+#btn3{
+    float:right;
+}
+#btn4{
+    float:right;
+}
+#btnName{
+    float:center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#pr{
+    float: right;
+}
+
+.text-right{
+    text-align: start;
+}
