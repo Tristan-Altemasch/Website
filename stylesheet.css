@@ -18,6 +18,12 @@
     color: black;
 }
 
+#h1{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(37, 207, 94);
+    font-size: 25px;
+}
+
 .center{
     text-align: center;
 }
@@ -58,6 +64,7 @@
 
 .button-header:hover {
     color: rgb(37, 207, 94);
+    cursor: pointer;
 }
 
 .button-header:active {
@@ -73,10 +80,10 @@
     display: inline-block;
 }
 #btn1{
-    float:left;
+    float:right;
 }
 #btn2{
-    float:left;
+    float:right;
 }
 #btn3{
     float:right;
@@ -85,8 +92,7 @@
     float:right;
 }
 #btnName{
-    float:center;
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    float:left;
 }
 
 .styled {
@@ -104,3 +110,6 @@
 .text-right{
     text-align: start;
 }
+
+#border { width: 1000px; min-height: 500px; margin: 0 auto; } 
+#border #foot {	height: 40px; width: 1000px; background-color: blue; }
