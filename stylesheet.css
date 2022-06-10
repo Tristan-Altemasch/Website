@@ -67,9 +67,6 @@
     cursor: pointer;
 }
 
-.button-header:active {
-    
-}
 .container{
     width: 100%;
     float: left;
@@ -113,3 +110,18 @@
 
 #border { width: 1000px; min-height: 500px; margin: 0 auto; } 
 #border #foot {	height: 40px; width: 1000px; background-color: blue; }
+
+input[type="text"] {
+    display: block;
+    margin : 0 auto;
+}
+
+input.email{
+    margin-top: 40px;
+}
+
+p.kontakt{
+    font-family: 'Roboto', sans-serif ;
+    font-size: 25px;
+    margin: auto;
+}
