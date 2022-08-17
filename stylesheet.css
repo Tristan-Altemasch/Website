@@ -28,6 +28,10 @@
     text-align: center;
 }
 
+.img{
+    margin: flex;
+}
+
 .img-center{
     display: block;
     margin-left: auto;
