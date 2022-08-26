@@ -67,7 +67,7 @@
 }
 
 .button-header:hover {
-    color: rgb(37, 207, 94);
+    color: #23c483;
     cursor: pointer;
 }
 
@@ -129,3 +129,4 @@ p.kontakt{
     font-size: 25px;
     margin: auto;
 }
+
