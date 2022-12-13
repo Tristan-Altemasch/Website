@@ -1,31 +1,436 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello!</title>
-    <meta name="description" content="description"/>
-    <meta name="author" content="author" />
-    <meta name="keywords" content="keywords" />
-    <link rel="stylesheet" href="./stylesheet2.css" type="text/css" />
-    <style type="text/css">.body { width: auto; }</style>
-  </head>
 
-
-  <body>
-
-    <h1>Elegant Contact Form</h1>
-    <form class="cf">
-      <div class="half left cf">
-        <input class="input" type="text" id="input-name" placeholder="Name">
-        <input class="input" type="email" id="input-email" placeholder="Email address">
-        <input class="input" type="text" id="input-subject" placeholder="Subject">
-      </div>
-      <div class="half right cf">
-        <textarea style="position: fix ;" name="message" type="text" id="input-message" placeholder="Message"></textarea>
-      </div>  
-      <input type="submit" value="Submit" id="input-submit">
-    </form>
-
-
-  </body>
-</html>
+ <!DOCTYPE html>
+ <html lang="de-DE">
+   <head>
+     <meta charset="utf-8">
+     <meta name="language" content="de"/>
+     <meta name="description" content="kontaktformular.com"/>
+     <meta name="revisit" content="After 7 days"/>
+     <meta name="robots" content="INDEX,FOLLOW"/>
+     <title>kontaktformular.com</title>
+ 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+   <!-- Stylesheet -->
+ <link href="css/stylesheettest.css" rel="stylesheet">
+ 
+ 
+ <link href='https://fonts.googleapis.com/css?family=Heebo:700' rel='stylesheet' type='text/css'>
+ 
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script></head>
+ 
+ 
+ 
+ 
+ 
+ <body>
+ 
+   <div>
+     <form id="kontaktformular" class="kontaktformular " action="/demo-formulare-ohne/11-advanced-html5/kontakt.php" method="post" enctype="multipart/form-data">
+     
+     
+ 
+ <script>
+ if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) 
+ {
+    document.getElementsByTagName("BODY")[0].className += " safari";
+ }
+   </script>
+ 
+ 
+ 
+       
+ 
+       <div class="row">
+         <div class="col-sm-8 ">
+           <label class="control-label" for="border-right"><i id="briefcase-icon" class="material-icons">business_center</i><span>Firma</span></label>
+           <input onclick="setActive(this);" onfocus="setActive(this);" aria-label="Firma" type="text" name="firma" class="field" placeholder="" value="" maxlength="50" id="border-right" />
+         </div>
+       </div>
+ 
+ 
+ 
+     <div class="row">
+         <div class="col-sm-4  ">
+           <label class="control-label select-label" for="border-right2" style="z-index: 1;" ><i id="dropdown-icon" class="material-icons">arrow_drop_down</i><span>Anrede *</span></label>
+           <input autocomplete="off" onclick="setActive(this);" onfocus="setActive(this);"  required  aria-label="Anrede" type="text" name="anrede" class="field select-input readonly" placeholder="" value="" id="border-right2" />
+                     <ul class="select-box">
+             <li class="placeholder">Anrede</li>
+             <li>Herr</li>
+             <li>Frau</li>
+           </ul>
+           <i id="dropdown-icon-without-icons" class="material-icons keyboard_arrow_down" onclick="setActive(document.getElementById('border-right2'));">keyboard_arrow_down</i>
+         </div>
+         <div class="col-sm-4 ">
+           <label class="control-label select-label" for="border-right3" style="z-index: 1;" ><i id="dropdown-icon" class="material-icons">arrow_drop_down</i><span>Titel</span></label>
+           <input autocomplete="off" onclick="setActive(this);" onfocus="setActive(this);" aria-label="Titel" type="text" name="titel" class="field select-input readonly" placeholder="" value="" id="border-right3" />
+           <ul class="select-box">
+             <li class="placeholder">Titel</li>
+             <li>Dr.</li>
+             <li>Dr. med.</li>
+             <li>Prof.</li>
+             <li>Prof. Dr.</li>
+             <li>Prof. Dr. med.</li>
+           </ul>
+           <i id="dropdown-icon-without-icons" class="material-icons keyboard_arrow_down" onclick="setActive(document.getElementById('border-right3'));">keyboard_arrow_down</i>
+         </div>
+       </div>
+ 
+ 
+ 
+ 
+ 
+       <div class="row">
+         <div class="col-sm-4  ">
+           <label class="control-label" for="border-right4"><i id="user-icon" class="material-icons">account_circle</i><span>Vorname *</span></label>
+           <input onclick="setActive(this);" onfocus="setActive(this);"  required  aria-label="Vorname" type="text" name="vorname" class="field"  placeholder="" value="" maxlength="50" id="border-right4" />
+                   </div>
+         <div class="col-sm-4  ">
+           <label class="control-label" for="border-right5"><i id="user-icon" class="material-icons">account_circle</i><span>Nachname *</span></label>
+           <input onclick="setActive(this);" onfocus="setActive(this);"  required  type="text" name="name" class="field" placeholder="" value="" maxlength="50" id="border-right5" />
+                   </div>
+       </div>
+ 
+ 
+ 
+       <div class="row">
+         <div class="col-sm-4  ">
+           <label class="control-label" for="border-right6"><i id="email-icon" class="material-icons">email</i><span>E-Mail *</span></label>
+           <input onclick="setActive(this);" onfocus="setActive(this);"  required  aria-label="E-Mail" type="email" name="email" class="field" placeholder="" value="" maxlength="50" id="border-right6" />
+                   </div>
+         <div class="col-sm-4 ">
+           <label class="control-label" for="border-right7"><i id="phone-icon" class="material-icons">phone</i><span>Telefon/Mobil</span></label>
+           <input onclick="setActive(this);" onfocus="setActive(this);" aria-label="Telefon" type="text" name="telefon" class="field" placeholder="" value="" maxlength="50" id="border-right7" />
+         </div>
+       </div>
+       
+     
+ 
+        <div class="row">
+         <div class="col-sm-8  ">
+           <label class="control-label" for="border-right8"><i id="subject-icon" class="material-icons">edit</i><span>Betreff *</span></label>
+           <input onclick="setActive(this);" onfocus="setActive(this);"  required  aria-label="Betreff" type="text" name="betreff" class="field" placeholder="" value="" maxlength="50" id="border-right8" />
+                   </div>
+       </div>
+         
+       
+       
+ 
+       <div class="row ">
+         <div class="col-sm-8 message-row  ">
+           <label class="control-label textarea-label" for="border-right9"><i id="message-icon" class="material-icons">chat</i><span>Nachricht *</span></label>
+           <textarea onclick="setActive(this);" onfocus="setActive(this);"  required  aria-label="Nachricht" name="nachricht" class="field" rows="5" placeholder="" id="border-right9"></textarea>
+                   </div>
+       </div>
+ 
+ 
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+           <input type="hidden" name="chkspmtm" value="1663328152" />
+     
+ 
+ 
+ 
+ 
+ 
+           <div class="row checkbox-row ">
+         <div class="col-sm-8 ">
+           <label for="inlineCheckbox12" class="checkbox-inline">
+             <i id="dataprotection-icon" class="material-icons material-icons-pos1">security</i><i id="dataprotection-checkbox-icon" class="material-icons material-icons-pos2 ">check_box_outline_blank</i>
+             <input style="left:55px;" type="checkbox" onclick="																		document.getElementById('dataprotection-checkbox-icon').innerHTML = (this.checked ? 'check_box' : 'check_box_outline_blank'); 
+                                     (this.checked ? document.getElementById('dataprotection-checkbox-icon').classList.add('checked') : document.getElementById('dataprotection-checkbox-icon').classList.remove('checked'));
+                                   "  required  aria-label="Datenschutz" id="inlineCheckbox12" name="datenschutz" value="akzeptiert" ><div> <a href="datenschutz.php" target="_blank">Ich stimme der Datenschutz&shy;erklärung zu.</a>&nbsp;*</div>
+           </label>
+                   </div>
+       </div><div style="margin-bottom:12px;"></div>
+          
+     
+       <div class="row" id="send">
+         <div class="col-sm-8" style="margin-left:2px;">
+           
+             <br /><br /><b>Hinweis:</b> Felder mit <span class="pflichtfeld">*</span> müssen ausgefüllt werden.
+           <br />
+           <br />
+           <input type="submit" class="senden" name="kf-km" value="Senden" />
+         
+         
+         
+         </div>
+       </div>
+       
+       
+       
+       
+       
+           <script type="text/javascript">
+         var formSubmit = false;
+         
+         // set class kontaktformular-validate for form if user wants to send the form > so the invalid-styles only appears after validation
+         function setValidationStyles(){
+           document.getElementById('kontaktformular').classList.add('kontaktformular-validate');
+           formSubmit = true;
+         }
+         document.getElementsByName('kf-km')[0].addEventListener('click', setValidationStyles);
+         document.getElementById('kontaktformular').addEventListener('submit', setValidationStyles);
+         
+         // add readonly-function to selectboxes
+         let readonlyFields = document.getElementsByClassName('readonly');
+         for(let i = 0; i < readonlyFields.length; i++){
+           readonlyFields[i].addEventListener('keydown', function(e){ e.preventDefault(); });
+           readonlyFields[i].addEventListener('paste', function(e){e.preventDefault(); });
+         }
+       </script>
+           <script>
+         document.addEventListener('invalid', function(e){
+           var field = e.target;
+           
+           // if field is checkbox or security-row: go to parentNode and do things because checkbox is in label-element
+           if('checkbox'==field.getAttribute('type') ||
+             field.parentNode.classList.contains('question-input-div') ||
+             field.parentNode.classList.contains('captcha-input-div')
+           ){
+             field.parentNode.parentNode.classList.add("error");
+           }
+           // field is no checkbox and no security-row: do things with field
+           else{
+             field.parentNode.classList.add("error");						
+           }
+           
+           field.setAttribute('onchange', 'checkField(this)');
+         }, true);
+         
+         
+         // checks if we can remove invalid-styles
+         function checkField(field){
+           
+           if(field.checkValidity()){
+             
+             // if field is checkbox or security-row: go to parentNode and do things because checkbox is in label-element
+             if('checkbox'==field.getAttribute('type') ||
+               field.parentNode.classList.contains('question-input-div') ||
+               field.parentNode.classList.contains('captcha-input-div')
+             ){
+               field.parentNode.parentNode.classList.remove("error");
+             }
+             // field is no checkbox and no security-row: do things with field
+             else{
+               field.parentNode.classList.remove("error");							
+             }	
+           }
+         }
+       </script>
+           <script>
+       
+         // --------------------- field active / inactive
+ 
+         // set active-class to field 
+         function setActive(element){
+ 
+                       // ignore function-call if the browser set focus because of HTML5-errors on form-submit and the field is a selectbox
+             if(formSubmit && element.classList.contains('select-input')){
+               
+               // set formSubmit to false so we know that the function is not called from browser (needed for HTML5-errors which create a focus-problem for selectboxes)
+               formSubmit = false;
+               return;
+             }
+             
+             // set formSubmit to false so we know that the function is not called from browser (needed for HTML5-errors which create a focus-problem for selectboxes)
+             formSubmit = false;
+           
+           // set onblur-function to set field inactive
+           element.focus();
+           element.setAttribute('onblur', 'setInactive(this)');
+           
+           // set active-class to parent-div
+           var parentDiv = getParentDiv(element);
+           
+           // if field is security-row: go to parentNode and do things
+           if(
+             parentDiv.classList.contains('question-input-div') ||
+             parentDiv.classList.contains('captcha-input-div')
+           ){
+             parentDiv.parentNode.classList.add('active-field');
+           }
+           // field is no security-row: do things with field
+           else{
+             parentDiv.classList.add('active-field');				
+           }
+           
+           // field is a selectBox > mark selected option
+           if(element.classList.contains('select-input') && ''!=element.value){
+             var selectBox = getSiblingUl(element);
+             var selectBoxOptions = selectBox.childNodes;
+             for (i = 0; i < selectBoxOptions.length; ++i) {
+               if('li'==selectBoxOptions[i].nodeName.toLowerCase()){
+                 if(element.value==selectBoxOptions[i].innerHTML){
+                   selectBoxOptions[i].classList.add('active');
+                 }
+                 else{
+                   selectBoxOptions[i].classList.remove('active');
+                 }
+               }							
+             }
+           }
+         }
+         
+         // set field inactive
+         function setInactive(element){
+ 
+           // remove active-class from parent-div
+           var parentDiv = getParentDiv(element);
+           
+           // if field is security-row: go to parentNode and do things
+           if(
+             parentDiv.classList.contains('question-input-div') ||
+             parentDiv.classList.contains('captcha-input-div')
+           ){
+             parentDiv.parentNode.classList.remove('active-field');
+           }
+           // field is no security-row: do things with field
+           else{
+             parentDiv.classList.remove('active-field');				
+           }
+           
+           // field contains string > set not-empty-class
+           if(''!=element.value){
+             parentDiv.classList.add('not-empty-field');
+           }
+           // field doesn't contain string > remove not-empty-class
+           else{
+             parentDiv.classList.remove('not-empty-field');
+           }
+         }
+ 
+ 
+         // set selectBox-eventlistener
+         var selectBoxOptions = document.querySelectorAll('.select-box li');
+         for (i = 0; i < selectBoxOptions.length; ++i) {
+           selectBoxOptions[i].setAttribute('onmousedown', 'selectOption(this)');
+         }
+         
+         // selects an electbox-option
+         function selectOption(element){
+ 
+           var field = getSiblingInput(element);				
+           var selectedValue = (element.classList.contains('placeholder') ? '' : element.innerHTML);
+           
+           // call check-function if field-content has changed and set selectedValue
+           if(field.value!=selectedValue){
+             field.value = selectedValue;
+             checkField(field);
+           }
+         }
+ 
+ 
+         
+         
+         
+         
+         
+         // set textarea-eventlistener
+         var textareas = document.getElementsByTagName('textarea');
+         for (i = 0; i < textareas.length; ++i) {
+           textareas[i].setAttribute('oninput', 'updateTextareaHeight(this)');
+           
+           var textareaPaddingTop = parseFloat(window.getComputedStyle(textareas[i]).getPropertyValue('padding-top'), 10);
+           var textareaPaddingBottom = parseFloat(window.getComputedStyle(textareas[i]).getPropertyValue('padding-bottom'), 10);
+           var textareaHeight = textareas[i].scrollHeight - textareaPaddingTop - textareaPaddingBottom;
+           
+           textareas[i].setAttribute('data-original_height', textareaHeight);
+           textareas[i].style.overflow = 'hidden';
+           textareas[i].style.boxSizing = 'border-box';
+           updateTextareaHeight(textareas[i]);
+         }
+         
+         // updates the height of the textarea
+         function updateTextareaHeight(element){
+           
+           // get original-height of textarea
+           var originalHeight = element.getAttribute('data-original_height');
+           
+           // clone textarea, set it 1px and insert it into dom
+           var tempCloneElement = element.cloneNode(true);
+           tempCloneElement.style.height = "1px";
+           element.after(tempCloneElement);
+           
+           // get new calculated height					
+           var newHeight = (tempCloneElement.scrollHeight);
+           
+           // remove temp clone-element to clean up
+           tempCloneElement.remove();
+           
+           // original-height is smaller > set new height										
+           if(originalHeight < newHeight){
+             element.style.height = newHeight+"px";
+           }
+           else{
+             element.style.height = originalHeight+"px";
+           }
+         }
+         
+         
+         
+         
+         // --------------------- helper
+         
+         // get the closest parent-div
+         function getParentDiv(element) {
+           while(element && element.parentNode){
+             element = element.parentNode;
+             if(element.tagName && 'div'==element.tagName.toLowerCase()){
+               return element;
+             }
+           }
+           return null;
+         }
+         
+         // get the closest sibling-input
+         function getSiblingInput(element) {
+           element = element.parentNode;
+           while(element && element.previousSibling){
+             element = element.previousSibling;
+             if(element.tagName && 'input'==element.tagName.toLowerCase()){
+               return element;
+             }
+           }
+           return null;
+         }				
+         
+         // get the closest sibling-ul
+         function getSiblingUl(element) {
+           while(element && element.nextSibling){
+             element = element.nextSibling;
+             if(element.tagName && 'ul'==element.tagName.toLowerCase()){
+               return element;
+             }
+           }
+           return null;
+         }				
+         
+         // return the filename of the selected file in the given file-input
+         function getFilename(element) {
+           if (''!=element.value) {
+             var startIndex = (element.value.indexOf('\\') >= 0 ? element.value.lastIndexOf('\\') : element.value.lastIndexOf('/'));
+             var filename = element.value.substring(startIndex);
+             if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+               filename = filename.substring(1);
+             }
+             return filename;
+           }
+           else{
+             return '&nbsp;'
+           }
+         }
+ 
+       </script>
+     </form>
+   </div>
+ </body>
+ </html>
+ 
